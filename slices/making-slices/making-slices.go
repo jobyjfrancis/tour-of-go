@@ -10,9 +10,13 @@ func main() {
 	a := make([]int, 5)
 	printSlice("a", a)
 
-	b := make([]int, 0, 5)
-	printSlice("b", b)
+	b := make([]int, 5, 5)
+	//printSlice("b", b)
 
+	for i := 0; i < 5; i++ {
+		b[i] = i
+	}
+	printSlice("b", b)
 	c := b[:2]
 	printSlice("c", c)
 
